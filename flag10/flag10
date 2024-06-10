@@ -1,0 +1,10 @@
+got a executable and a file that I cant read
+executable ask me to read a thing that I don't have acces to
+I have to execute the executable with a acces to token
+
+in the programm it access the file to read, create a socket where it will send the content of the file, open the file, read it and send it.
+we have to send token, not possible. but since acces and open work differently, I can create a script to swap a file I can read and send and token realy fast, and hope it acces my file but open token
+
+(see script)
+result : woupa2yuojeeaaed06riuj63c
+flag : feulo4b72j7edeahuete3no7c

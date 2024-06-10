@@ -1,0 +1,13 @@
+we got a executable and a token
+
+read the token -> cursed things
+execute the executable -> need a argument, and transforme it.
+try to reverse the executable : told me to not do it
+
+have to decode the token
+run executable with 00000 got 01234 <-- it add i to str[i];
+create a C programme that do the opposite and reverse the token
+got f3iji1ju5yuevaus41q1afiuq
+su flag09 f3iji1ju5yuevaus41q1afiuq work
+
+flag  : s5cAJpM8ev6XHw998pRWG728z

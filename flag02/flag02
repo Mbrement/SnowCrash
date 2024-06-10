@@ -1,0 +1,11 @@
+file pcap --- file of capture of internet trafic
+wireshark my beloved, I missed you
+(tcpdump -XXAr level02.pcap >tmp level02.pcap work too)
+
+we can read a "Password" inside the ascii translation of the capture. --> read the hex from there
+(if we encounter 7f ==> it's a del, just del a character of what you found)
+ft_waNDReL0L
+
+su flag02 => ft_waNDReL0L
+get flag : 
+kooda2puivaav1idi4f57q8iq

