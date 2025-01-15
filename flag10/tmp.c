@@ -15,7 +15,7 @@ int main() {
     int addrlen = sizeof(address);
     char buffer[1024] = {0};
     const char *hello = "Bonjour, je suis le serveur !\n";
-
+	printf ("%s", hello);
     // Création du socket
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) {
         perror("socket failed");
@@ -31,13 +31,14 @@ int main() {
 	listen(server_fd, 3);
 
     // Lecture du message du client
-	int fd = open("./result", O_RDWR);
+	int fd = open("./result42", O_RDWR);
 	while (1)
 	{
 	new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen)	;
 	recv(new_socket, buffer, 1024, 0);
     read(new_socket, buffer, 1024);
-
+	if (buffer[0] != '\0')
+		printf("Message reçu : %s\n", buffer);
     write(fd, buffer, strlen(buffer));
 	}
     
