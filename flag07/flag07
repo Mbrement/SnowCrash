@@ -1,9 +1,1 @@
-got a executable
-
-decompile it (scp into godbolt for ghidra)
-got a getenv("LOGNAME");
-change LOGNAME (env variable) to "; getflag"
-
----> ???
-
-yay->fiumuikeil55xe9cu4dood66h
+fiumuikeil55xe9cu4dood66h

