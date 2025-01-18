@@ -4,7 +4,8 @@
 
 * it use the uid to check wich user use it, so I get the uid of flag14 (id -u <username>)
 
-* open getflag in gdb, 
+* open getflag in gdb,
+ 
 		catch syscall ptrace
 		command 1 
 		set ($eax) = 0 
